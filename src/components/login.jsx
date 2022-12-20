@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react"
 
-function LoginForm(props) {
+function LoginForm({onFormSwitch}) {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
 
@@ -23,7 +23,7 @@ function LoginForm(props) {
         <button type="submit">Log in</button>
       </form>
       <br></br>
-      <button onClick={()=> this.props.onFormSwitch('register')}>Register here</button>
+      <button onClick={()=> onFormSwitch('register')}>Register here</button>
     </>
   )
 }
