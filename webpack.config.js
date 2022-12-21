@@ -40,10 +40,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //         }
 //       }
 //     },
-//     {
-//       test: /\.html$/i,
-//       loader: "html-loader"
-//     }
+    // {
+    //   test: /\.html$/i,
+    //   loader: "html-loader"
+    // }
 //   ],
 //  },
 //  plugins: [
@@ -115,6 +115,14 @@ module.exports = {
         test: /.(css|scss)$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader','sass-loader'],
+      },
+      {
+        test:/\.html$/i,
+        loader: "html-loader"
+      },
+      {
+        test: /\.mp4$/,
+        loader: 'file-loader'
       }
     ],
   },
