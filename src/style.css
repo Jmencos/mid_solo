@@ -13,17 +13,21 @@
 }
 
 .login, .register {
-  background-color: rgb(244, 113, 52);
-  border: solid;
+  background-color: rgba(244, 113, 52, 0.2);
+  border: dotted rgba(255, 255, 255, 0.5);
   width: '50%';
-  height:auto
+  height:auto;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .auth-form {
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 
 }
 
@@ -55,7 +59,9 @@ input {
 }
 
 h2 {
-  color:antiquewhite
+  color:antiquewhite;
+  text-align: center;
+
 }
 
 video {
@@ -78,5 +84,5 @@ video {
 
 .logbtn {
   position: center;
-  border: dotted
+  border: solid
 }
