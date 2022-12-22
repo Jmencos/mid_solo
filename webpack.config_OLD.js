@@ -20,7 +20,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //       "*": {
 //         target: "http://localhost:3000/",
 //         secure: false
-//       } 
+//       }
 //     }
 //    },
 //   module: {
@@ -40,10 +40,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //         }
 //       }
 //     },
-    // {
-    //   test: /\.html$/i,
-    //   loader: "html-loader"
-    // }
+// {
+//   test: /\.html$/i,
+//   loader: "html-loader"
+// }
 //   ],
 //  },
 //  plugins: [
@@ -54,8 +54,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //   })
 //  ]
 // }
-
-
 
 module.exports = {
   entry: [
@@ -107,23 +105,23 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
         },
       },
       {
         test: /.(css|scss)$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader','sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test:/\.html$/i,
-        loader: "html-loader"
+        test: /\.html$/i,
+        loader: 'html-loader',
       },
       {
         test: /\.mp4$/,
-        loader: 'file-loader'
-      }
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [
