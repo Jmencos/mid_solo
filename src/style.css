@@ -94,13 +94,18 @@ video {
   padding: 5rem;
   border-radius: 5px;
   margin: 10px;
-  width:800px;
+  width:700px;
   height:450px;
   position: center;
-  background-color: aqua;
+  background-color: rgba(231, 131, 131,0.5);
 }
 
 .display {
-  background-color: rgb(255, 149, 0);
+  background: linear-gradient(red ,orange ,yellow);
   min-height: 100vh;
+}
+
+.reviewmsg {
+  width:700px;
+  justify-content: center;
 }

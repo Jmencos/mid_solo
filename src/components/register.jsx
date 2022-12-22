@@ -17,6 +17,7 @@ function Register({onFormSwitch}) {
         <br></br>
         <label htmlFor="password">Enter password </label>
         <input onChange={(e) => setPass(e.target.value)} value={pass} type="password" placeholder="*****" id="password"></input>
+        <br></br>
         <button className="button">Sign up</button>
       </form>
       <br></br>
