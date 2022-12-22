@@ -86,3 +86,21 @@ video {
   position: center;
   border: solid
 }
+
+.window {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 5px;
+  margin: 10px;
+  width:800px;
+  height:450px;
+  position: center;
+  background-color: aqua;
+}
+
+.display {
+  background-color: rgb(255, 149, 0);
+  min-height: 100vh;
+}
