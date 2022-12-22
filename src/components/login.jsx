@@ -21,7 +21,7 @@ function LoginForm({onFormSwitch}) {
         <label htmlFor="password">Enter password </label>
         <input value={pass} onChange={(e)=> setPass(e.target.value)} type="password" placeholder="******" id="passsword" name="password"></input>
         <br></br>
-        <button type="submit">Log in</button>
+        <button className="logbtn" type="submit">Log in</button>
       </form>
       <br></br>
       <button className="link-btn" onClick={()=> onFormSwitch('register')}>Need an account? Register here</button>

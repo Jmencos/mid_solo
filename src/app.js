@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './style.css'
 import LoginForm from './components/login'
 import Register from "./components/register"
+import Main from './components/main'
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
@@ -12,9 +13,7 @@ function App() {
   }
   return (
     <div className='app'>
-      {
-        currentForm === 'login' ? <LoginForm onFormSwitch={toggleForm} /> : <Register  onFormSwitch={toggleForm}/>
-      }
+      <Main />
     </div>
   )
 }
