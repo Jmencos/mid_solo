@@ -40,10 +40,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //         }
 //       }
 //     },
-//     {
-//       test: /\.html$/i,
-//       loader: "html-loader"
-//     }
+    // {
+    //   test: /\.html$/i,
+    //   loader: "html-loader"
+    // }
 //   ],
 //  },
 //  plugins: [
@@ -93,7 +93,7 @@ module.exports = {
      * to localhost:3000/api/* (where our Express server is running)
      */
     proxy: {
-      '**': {
+      '/api': {
         target: 'http://localhost:3000/',
         secure: false,
       },
@@ -115,6 +115,14 @@ module.exports = {
         test: /.(css|scss)$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader','sass-loader'],
+      },
+      {
+        test:/\.html$/i,
+        loader: "html-loader"
+      },
+      {
+        test: /\.mp4$/,
+        loader: 'file-loader'
       }
     ],
   },
