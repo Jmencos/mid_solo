@@ -30,6 +30,15 @@ module.exports = {
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /\.mp4$/,
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [
